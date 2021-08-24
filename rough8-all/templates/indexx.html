@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<html><head>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<h1>The select form attribute</h1>
+<right>
+<!--<img src="https://media.giphy.com/media/l1J9LIsJB4xHMzLLq/giphy.gif">-->
+</right>
+
+<form method="POST"  id="carform">
+  <label for="uname">Firstname:</label>
+  <input type="text" id="uname" name="uname">
+    <br>
+
+    <select id="cars" name="carfs">
+  <option value="volvo">Volvo XC90</option>
+  <option value="saab">Saab 95</option>
+  <option value="mercedes">Mercedes SLK</option>
+  <option value="audi">Audi TT</option>
+    </select>
+    <br>
+
+    <select id="image" name="image">
+  <option value="volvo">Volvo XC90</option>
+  <option value="debian">debian</option>
+  <option value="mercedes">Mercedes SLK</option>
+  <option value="audi">Audi TT</option>
+    </select>
+
+
+<!--<input type="submit" value="Submit">-->
+
+  <input type="submit">
+</form>
+<br>
+
+<!--<label for="cars">Choose a car:</label>-->
+<!--<select id="cars" name="carlist" form="carform">-->
+<!--  <option value="volvo">Volvo</option>-->
+<!--  <option value="saab">Saab</option>-->
+<!--  <option value="opel">Opel</option>-->
+<!--  <option value="audi">Audi</option>-->
+<!--</select>-->
+
+<!--<label for="image">Choose a car:</label>-->
+<!--<select id="image" name="image" form="carform">-->
+<!--  <option value="volvo">Volvo</option>-->
+<!--  <option value="saab">Saab</option>-->
+<!--  <option value="opel">debian</option>-->
+<!--  <option value="audi">Audi</option>-->
+<!--</select>-->
+
+
+</body>
+</html>

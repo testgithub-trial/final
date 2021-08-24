@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body class="vpcbg">
+<div id="will_hide">
+
+<br>
+
+<div class="d">
+<button>
+<h3><a href="{{(url_for('home'))}}" >Click here</a><br><small>HomePage</small></h3></button>
+    <form method="POST" id="carform">
+        <label for="uname">Enter the VPC name:</label>
+        <input type="text" id="uname" name="uname">
+        <br>
+        <br>
+        <table align="right">
+<!--            <label for="subnetname">Enter the subnetname name:</label>-->
+            <tr>
+                <td><input type="text" id="subnetname" name="subnetname" placeholder="subnetname"></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="asia-east1" name="region" value="asia-east1"></td>
+                <td>  <label for="asia-east1">asia-east1</label><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" id="asia-northeast1" name="region" value="asia-northeast1"></td>
+                <td>  <label for="asia-northeast1">asia-northeast1</label><br></td>
+            </tr>
+<!--            -->
+            <tr>
+                <td><input type="radio" id="asia-south1" name="region" value="asia-south1"></td>
+                <td>  <label for="asia-south1">asia-south1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="asia-southeast1" name="region" value="asia-southeast1"></td>
+                <td>  <label for="asia-southeast1">asia-southeast1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="us-central1" name="region" value="us-central1"></td>
+                <td>  <label for="us-central1">us-central1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="us-east1" name="region" value="us-east1"></td>
+                <td>   <label for="us-east1">us-east1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="us-west4" name="region" value="us-west4"></td>
+                <td>  <label for="us-west4">us-west4</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="northamerica-northeast2" name="region" value="northamerica-northeast2"></td>
+                <td>  <label for="northamerica-northeast2">northamerica-northeast2</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="europe-west1" name="region" value="europe-west1"></td>
+                <td>  <label for="europe-west1">europe-west1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="australia-southeast2" name="region" value="australia-southeast2"></td>
+                <td>  <label for="australia-southeast2">australia-southeast2</label><br></td>
+            </tr>
+
+<!--            <tr>-->
+<!--                <td><input type="submit" value="Create"></td>-->
+<!--            </tr>-->
+
+<!--            <label for="subnetname">Enter the subnetname name:</label>-->
+             <tr>
+            <td> <input type="text" id="subnetname0" name="subnetname0" placeholder="subnetname"></td>
+             </tr>
+            <tr>
+                <td><input type="radio" id="asia-east10" name="region0" value="asia-east1"></td>
+                <td>  <label for="asia-east1">asia-east1</label><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" id="asia-northeast10" name="region0" value="asia-northeast1"></td>
+                <td>  <label for="asia-northeast1">asia-northeast1</label><br></td>
+            </tr>
+<!--            -->
+            <tr>
+                <td><input type="radio" id="asia-south10" name="region0" value="asia-south1"></td>
+                <td>  <label for="asia-south1">asia-south1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="asia-southeast10" name="region0" value="asia-southeast1"></td>
+                <td>  <label for="asia-southeast1">asia-southeast1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="us-central10" name="region0" value="us-central1"></td>
+                <td>  <label for="us-central1">us-central1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="us-east10" name="region0" value="us-east1"></td>
+                <td>   <label for="us-east1">us-east1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="us-west40" name="region0" value="us-west4"></td>
+                <td>  <label for="us-west4">us-west4</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="northamerica-northeast20" name="region0" value="northamerica-northeast2"></td>
+                <td>  <label for="northamerica-northeast2">northamerica-northeast2</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="europe-west10" name="region0" value="europe-west1"></td>
+                <td>  <label for="europe-west1">europe-west1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="australia-southeast20" name="region0" value="australia-southeast2"></td>
+                <td>  <label for="australia-southeast2">australia-southeast2</label><br></td>
+            </tr>
+<!---->
+
+<!--            -->
+
+             <tr>
+            <td> <input type="text" id="subnetname00" name="subnetname00" placeholder="subnetname"></td>
+             </tr>
+            <tr>
+                <td><input type="radio" id="asia-east100" name="region00" value="asia-east1"></td>
+                <td>  <label for="asia-east1">asia-east1</label><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" id="asia-northeast100" name="region00" value="asia-northeast1"></td>
+                <td>  <label for="asia-northeast1">asia-northeast1</label><br></td>
+            </tr>
+<!--            -->
+            <tr>
+                <td><input type="radio" id="asia-south100" name="region00" value="asia-south1"></td>
+                <td>  <label for="asia-south1">asia-south1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="asia-southeast100" name="region00" value="asia-southeast1"></td>
+                <td>  <label for="asia-southeast1">asia-southeast1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="us-central100" name="region00" value="us-central1"></td>
+                <td>  <label for="us-central1">us-central1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="us-east100" name="region00" value="us-east1"></td>
+                <td>   <label for="us-east1">us-east1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="us-west400" name="region00" value="us-west4"></td>
+                <td>  <label for="us-west4">us-west4</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="northamerica-northeast200" name="region00" value="northamerica-northeast2"></td>
+                <td>  <label for="northamerica-northeast2">northamerica-northeast2</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="europe-west100" name="region00" value="europe-west1"></td>
+                <td>  <label for="europe-west1">europe-west1</label><br></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="australia-southeast200" name="region00" value="australia-southeast2"></td>
+                <td>  <label for="australia-southeast2">australia-southeast2</label><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Create" onclick="loading()" >
+            </tr>
+        </table>
+    </form>
+
+
+</div>
+</div>
+<div id="loading" class="style"><img src="{{url_for('static', filename='google.gif')}}" alt="loadding......" width="110%"/></div>
+
+<script type="text/javascript">
+   function loading() {
+    $("#will_hide").hide();
+    $('#loading').show();
+
+ };
+</script>
+
+
+</body>
+
+</html>

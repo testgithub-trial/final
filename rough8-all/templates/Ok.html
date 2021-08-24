@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="result">
+
+<h1>Super, your {{reult}}</h1>
+
+<button>
+<h3><a href="{{(url_for('home'))}}" >Click here</a><br><small>HomePage</small></h3></button>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<button>
+
+<!--<h3><a href="{{(url_for('vm'))}}" >Click here</a><br><small>{{msg}}</small></h3></button>-->
+<h3><a href="{{(url_for('vm'))}}" >Click here</a><br><small>{{msg}}</small></h3></button>
+
+
+</body>
+</html>
